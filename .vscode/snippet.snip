@@ -1,0 +1,76 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"Stubfile cpp": {
+		"prefix": "stubcpp",
+		"body": [
+			"/** ",
+			" *",
+			" * @author - Ayush",
+			" * @title - $TM_FILENAME",
+			" * @createdOn - $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE} $CURRENT_HOUR:$CURRENT_MINUTE Hrs",
+			" * ",
+			" **/",
+			"#include <iostream>",
+			"#include <bits/stdc++.h>",
+			"#define nl '\\n'",
+			"#define MOD 1e9 + 7",
+			"#define fastIO ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0);",
+			"typedef long double ld;",
+			"typedef long long ll;",
+			"using namespace std;",
+			"",
+			"int main()",
+			"{",
+			"\t#ifdef LOCAL_PROJECT",
+			"\t\tfreopen(\"input.txt\", \"r\", stdin);",
+			"\t\tfreopen(\"output.txt\", \"w\", stdout);",
+			"\t#endif",
+			"\tfastIO",
+			"\tint tc;",
+			"\tcin >> tc;",
+			"\tcin.ignore();",
+			"\twhile(tc--)",
+			"\t{",
+			"\t\t$0",
+			"\t}",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "cpp boilerplate template"
+	},
+
+	"Input array": {
+		"prefix": "GenArray()",
+		"body": [
+			"vector<int> GenArray()",
+			"{",
+				"\tint n;",
+				"\tcin >> n;",
+				"\tvector<int> a;",
+				"\ta.reserve(n);",
+				"\tfor (int i = 0; i < n; i++)",
+				"\t{",
+				"\t\tint temp = rand() % 100000;",
+				"\t\ta.push_back(temp);",
+				"\t}",
+			"\treturn a;",
+			"}"
+		],
+		"description": "Generate an array of randoms"
+	},
+	"Print array": {
+		"prefix": "PrintArray()",
+		"body": [
+			"void PrintArray(vector<int> a)",
+			"{",
+				"\tfor(int i = 0; i < a.size(); i++) cout << a[i] << \" \";",
+				"\tcout << endl;",
+			"}"
+		],
+		"description": "print a vector"
+	}
+}

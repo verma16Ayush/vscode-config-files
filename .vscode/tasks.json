@@ -8,20 +8,23 @@
             "label": "g++.exe build active file",
             "command": "C:\\TDM-GCC-64\\bin\\g++.exe",
             "args": [
+                "-D",
+                "LOCAL_PROJECT",
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\bin\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
                 "cwd": "C:\\TDM-GCC-64\\bin"
             },
             "problemMatcher": [
-                "$gcc",
-                // "fileLocation": [ "absolute" ],
+                "$gcc"
             ],
-            "group": "build"
-        },
-       
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
     ]
 }
