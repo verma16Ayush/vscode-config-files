@@ -69,4 +69,34 @@
 		],
 		"description": "cpp boilerplate template"
 	},
+	"Input array": {
+		"prefix": "GenArray()",
+		"body": [
+			"vector<int> GenArray()",
+			"{",
+				"\tint n;",
+				"\tcin >> n;",
+				"\tvector<int> a;",
+				"\ta.reserve(n);",
+				"\tfor (int i = 0; i < n; i++)",
+				"\t{",
+				"\t\tint temp = rand() % 100000;",
+				"\t\ta.push_back(temp);",
+				"\t}",
+			"\treturn a;",
+			"}"
+		],
+		"description": "Generate an array of randoms"
+	},
+	"Print array": {
+		"prefix": "PrintArray()",
+		"body": [
+			"void PrintArray(vector<int> a)",
+			"{",
+				"\tfor(int i = 0; i < a.size(); i++) cout << a[i] << \" \";",
+				"\tcout << endl;",
+			"}"
+		],
+		"description": "print a vector"
+	}
 }
