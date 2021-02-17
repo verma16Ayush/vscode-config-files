@@ -1,16 +1,15 @@
 {
     "configurations": [
         {
-            "name": "Win32",
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
             ],
-            "compilerPath": "C:\\TDM-GCC-64\\bin\\gcc.exe",
-            "cStandard": "c11",
+            "defines": [],
+            "cStandard": "gnu17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/g++"
         }
     ],
     "version": 4
